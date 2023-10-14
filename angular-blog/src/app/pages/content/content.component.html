@@ -1,0 +1,18 @@
+<div class="container__content">
+    <div class="content__cover">
+        <img src="{{photoCover}}" alt="" srcset="">
+    </div>
+    <div class="content__title">
+        <h1>{{contentTitle}}</h1>
+    </div>    
+
+    <div>
+        <h1 [ngStyle]="{'color':reviewState?'green':'red'}">{{contentRev}}</h1>
+    </div>  
+
+
+    <div class="content__desc">
+        <a [routerLink]="['']"> << VOLTAR</a>
+        <p>{{contentDesc}}</p>
+    </div>
+</div>
